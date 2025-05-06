@@ -1,0 +1,1 @@
+document.getElementById("app").textContent="Welcome to your BJJ Beginners Framework!";

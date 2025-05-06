@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal – BJJ Beginners FrameWork</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <!-- Header + Nav -->
+  <header>
+    <h1>BJJ Beginners FrameWork</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Positions</a>
+      <a href="#">Journal</a>
+      <a href="#">Glossary</a>
+      <a href="#">Tool</a>
+    </nav>
+  </header>
+
+  <!-- Journal Form -->
+  <main>
+    <section class="journal-section">
+      <h2>Technique Journal</h2>
+      <form id="journalForm">
+        <label>
+          Date:
+          <input type="date" id="entryDate" required />
+        </label>
+        <label>
+          Technique Name:
+          <input type="text" id="techniqueName" placeholder="e.g., Closed Guard Sweep" required />
+        </label>
+        <label>
+          Proficiency (Belt Rank):
+          <select id="proficiency" required>
+            <option value="">Select Belt</option>
+            <option value="White Belt">White Belt</option>
+            <option value="Blue Belt">Blue Belt</option>
+            <option value="Purple Belt">Purple Belt</option>
+            <option value="Brown Belt">Brown Belt</option>
+            <option value="Black Belt">Black Belt</option>
+          </select>
+        </label>
+        <label>
+          Notes:
+          <textarea id="notes" rows="3" placeholder="What worked? What didn't?"></textarea>
+        </label>
+        <button type="submit">Add Entry</button>
+      </form>
+
+      <h3>Your Entries</h3>
+      <ul id="entriesList"></ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 BJJ Beginners FrameWork</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
